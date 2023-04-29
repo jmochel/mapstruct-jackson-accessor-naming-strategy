@@ -4,6 +4,11 @@ on:
   push:
     branches: [ $default-branch ]
 
+run-name: ${{ github.actor }} is building
+on:
+  push:
+    branches: [ main ]
+
 jobs:
   build:
     runs-on: ubuntu-latest
