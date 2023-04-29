@@ -29,6 +29,7 @@ import static org.mockito.Mockito.when;
 public class JacksonAnnotationAccessorNamingStrategyTest
 {
     @Test
+    @DisplayName("Test 1")
     public void canCatchAGetter() throws NoSuchMethodException {
 
         var strategy = new JacksonAnnotationAccessorNamingStrategy();
