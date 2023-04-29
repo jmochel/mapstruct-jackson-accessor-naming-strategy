@@ -3,6 +3,7 @@ package org.saltations.mapstruct.jackson.annotation;
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mapstruct.ap.internal.util.accessor.ExecutableElementAccessor;
 import org.mapstruct.ap.spi.MapStructProcessingEnvironment;
@@ -55,6 +56,7 @@ public class JacksonAnnotationAccessorNamingStrategyTest
     }
 
     @Test
+    @DisplayName("Test 2")
     public void canCatchASetter() throws NoSuchMethodException {
 
         var strategy = new JacksonAnnotationAccessorNamingStrategy();
